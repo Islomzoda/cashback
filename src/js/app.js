@@ -1,8 +1,18 @@
-const regularPurchase = 3000;
+const regularPurchase = 200;
 const regularPurchasePercent = 0.01;
+
+const increasedPurchase = 100;
+const increasedPurchasePercent = 0.05;
+
+const specialPurchase = 100;
+const scecialPurchasePercent = 0.3;
+
 const cashbackLimit = 3000;
-let cashback = regularPurchase * regularPurchasePercent;
-if (cashback > cashbackLimit) {
+let cashback = regularPurchase * regularPurchasePercent + 
+    increasedPurchase * increasedPurchasePercent + 
+    specialPurchase * scecialPurchasePercent;
+
+    if (cashback > cashbackLimit) {
     cashback = cashbackLimit
 }
 console.log(cashback);
